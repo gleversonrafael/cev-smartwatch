@@ -1,0 +1,191 @@
+/* config */
+@charset "UTF-8";
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* general */
+:root { 
+    --dBlue: #353A8C;
+    --lBlue: #ABE2FF;
+    --purple: #DB88F2;
+    --mFont: "Montserrat", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #fff url(../media/img/wallpaper.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    background: linear-gradient(360deg, #35398c6e, #abe2ff2f, #db88f210);
+
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset 0px 0px 40px #222;
+}
+
+
+
+/* smartwatch */
+#swBox {
+    background: #ffffff00 url(../media/img/f-watch.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 100vh;
+    width: 60vh;
+    min-width: 300px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#swSS { /* smartwatch show screen */
+    display: block;
+    
+    background-color: #ffffff;
+
+    height: 58vh;
+    min-height: 300px;
+
+    width: 80%;
+    border-radius: 65px;
+}
+
+
+
+/* smartwatch navigation section*/
+#swBox > section {
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-evenly;
+
+    position: absolute;
+    background-color: #0000007e;
+
+    height: 7vh;
+    
+    margin-top: 85%;
+
+    border-radius: 75px;
+}
+
+.cB { /* change button*/
+    background-color: #ffffff00;
+
+    display: inline-block;
+    height: 6vh;
+    width: 6vh;
+
+    border: 2.5px solid #fff;
+    border-radius: 50px;
+    margin: 0 0.25vw;
+
+    box-sizing: border-box;
+}
+
+.cB:hover {
+    background-color: var(--lBlue);
+    height: 8vh;
+    width: 8vh;
+
+    border: 4px solid var(--lBlue);
+    transition: all .25s;
+}
+
+.cB:active {
+    border: 5px solid var(--purple);
+}
+
+#cBhome {
+    background:url(../media/icons/homeICO.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#cBtour {
+    background: url(../media/icons/globeICO.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#cBpoem {
+    background:url(../media/icons/poemICO.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/* others */
+#titleBox {
+    position: absolute;
+    right: 2.5%;
+    bottom: 5%;
+
+    height: fit-content;
+    display: flex;
+}
+
+#mTitle {
+    color: var(--lBlue);
+    font: normal normal 4em var(--mFont);
+    letter-spacing: -2.5px;
+    
+    margin-right: 2vw;
+    text-shadow: 0.5px 0.5px 2px #000000;
+}
+
+#titleBox > div {
+    width: 7.5px;
+    height: 80px;
+
+    margin-right: 5px;
+    transition: all .1s;
+}
+
+#titleBox > div:first-of-type {
+    background-color: var(--lBlue);
+
+    width: 25px;
+    height: 100px;
+}
+
+#titleBox > div:nth-of-type(2) {
+    background-color: var(--dBlue)
+}
+
+#titleBox > div:last-of-type {
+    background-color: var(--purple);
+}
+
+
+/* media */
+@media (max-width: 450px) {
+    #swBox {
+        width: 40vw;
+    }
+
+    #swSS {
+        width: 95%;
+    }
+}

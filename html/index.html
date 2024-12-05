@@ -3,35 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Projeto - iframes</title>
-    <link rel="stylesheet" href="../css/gcss.css">
+    <title> Smartwatch na Web</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../media/icons/pageIco.svg" type="image/x-icon">
 
 </head>
 
 <body>
+    <!-- atualizar as páginas e inseri-las como hrefs dos anchors -->
+
     <main>
-        <section id="tvBox">
-            <iframe id="sArea" name="content" src=""frameborder="0" referrerpolicy="no-referrer"></iframe>
+        <section id="swBox">
+            <iframe id="swSS" name="swSS" src="startpage.html" frameborder="0"></iframe>
 
-            <!-- buttons -->
             <section>
-                <nav>
-                    <a href="https://gleversonrafael.github.io/cev-turismo/" target="content"> <div id="hButton" class="bPattern"></div> </a>
-                    
-                    <a href="https://gleversonrafael.github.io/cev-poema/" target="content"> <div class="bPattern"> </div> </a>
-                    
-                    <a href="" target="content"> <div class="bPattern"></div> </a>
+                <a href="startpage.html" target="swSS"> 
+                    <div id="cBhome" class="cB"></div> 
+                </a>
 
-                </nav>
+                <a href="https://gleversonrafael.github.io/cev-turismo/" target="swSS"> 
+                    <div id="cBtour" class="cB"></div> 
+                </a>
+
+                <a href="https://gleversonrafael.github.io/cev-poema/" target="swSS"> 
+                    <div id="cBpoem" class="cB"></div> 
+                </a>
+
+                <!-- caso queira adicionar mais páginas, insira outros botões aqui -->
 
             </section>
 
         </section>
 
-        <h1> Nostalgia</h1>
+        <section id="titleBox">
+            <h1 id="mTitle"> Início</h1>
+            
+            <div id="dlBlue" class="opDiv"></div>
+            <div id="ddBlue" class="opDiv"></div>
+            <div id="dpurple" class="opDiv"></div>
+
+        </section>
 
     </main>
 
+    <script src="../js/txtchanger.js"></script>
+    
 </body>
-
 </html>
